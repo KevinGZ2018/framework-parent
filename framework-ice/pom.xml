@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>framework-parent</artifactId>
+        <groupId>com.fushun.framework</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fushun.framework</groupId>
+    <artifactId>framework-ice</artifactId>
+    <name>framework-ice</name>
+
+    <properties>
+        <ice.version>3.6.3</ice.version>
+        <groovy-all.version>2.4.4</groovy-all.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fushun.framework</groupId>
+            <artifactId>framework-exception</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fushun.framework</groupId>
+            <artifactId>framework-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fushun.framework</groupId>
+            <artifactId>framework-spring-boot</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- ice -->
+        <dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>ice</artifactId>
+            <version>${ice.version}</version>
+        </dependency>
+        <!-- icebox -->
+        <dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>icebox</artifactId>
+            <version>${ice.version}</version>
+        </dependency>
+        <!-- Glacier2 -->
+        <dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>glacier2</artifactId>
+            <version>${ice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy-all.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
